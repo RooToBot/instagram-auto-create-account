@@ -26,7 +26,8 @@ print(name)
 password_field  = browser.find_element_by_name('password')
 password_field.send_keys('aa12345bb12345cc'+name) #You can determine another password here.
 
-submit = browser.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div[2]/div[1]/div/form/div[6]/span/button')
+submit = browser.find_element_by_xpath('/html/body/span/section/main/article/div[2]/div[1]/div/form/div[7]/div/button')
+#submit = browser.find_element_by_xpath('//*[@id="react-root"]/section/main/div[0]/article/div[2]/div[1]/div/form/div[6]/span/button')
 submit.click()
 time.sleep(8)
 
